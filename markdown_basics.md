@@ -1,3 +1,3 @@
 ### Understanding Markdown
 
-This git stuff seems really useful, but I'm still trying to get it to work...
+This git stuff seems really useful, but I'm still trying to get it to work...tBu 
