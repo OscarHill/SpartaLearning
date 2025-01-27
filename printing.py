@@ -1,3 +1,8 @@
-print ("Hello, world!")
+customers = {
+  "name": "Howard",
+  "age": "47",
+  "workplace": "HHM"
+}
 
-print("Trying to get git to work...")
+for item in customers.values():
+  print(item)
