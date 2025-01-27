@@ -70,4 +70,4 @@
 	- push the changes to github
 		- `git push origin main
 
-(important to be able to do git init, git add, git commit, git push)
+(important to be able to do `git init`, `git add`, `git commit`, `git push`)
