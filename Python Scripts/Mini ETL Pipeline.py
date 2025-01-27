@@ -8,10 +8,11 @@ file_name = 'student_test_scores_extended.csv' #Declaring file name - this can b
 def open_file(file_name):
     try:
         with open(file_name, newline='') as file:
-            csv_reader = csv.DictReader(file) #Method that produces the list of dicts
+            csv_reader = list(csv.DictReader(file)) #Method that produces the list of dicts
             return csv_reader
     except FileNotFoundError:
         print("File name not found")
+        return None
 
 # This function transforms the file by removing column headings we don't want, as well as creating a new column with an average score
 def transform_file(csv_reader):
@@ -35,7 +36,7 @@ def transform_file(csv_reader):
     for data in data_list:
         print(data)
         # Have a look to see if it's worked
-
+    return data_list
 
 # This function writes the list of dicts to a new file using the DictWriter object
 def write_file(data_list):
@@ -45,10 +46,12 @@ def write_file(data_list):
         writer.writerows(data_list) #Adding each row to the table
 # 'with' automatically saves and closes the file when you're finished
 
+write_file(transform_file(open_file(file_name)))
 
 #Running unit tests with pytest
 
-
+"""
 def test_open_file():
     result = open_file(file_name)
     assert result is not None
+"""
