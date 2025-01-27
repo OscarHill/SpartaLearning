@@ -1,2 +1,3 @@
 print ("Hello, world!")
-=ihaoeuaoeutahtnh,.dprcgd`eouiuoa.puioeuioeui
+
+print("Trying to get git to work...")
