@@ -112,14 +112,7 @@ def is_prime(number):
 while True:
     num = input("Choose a number")
     print(num)
-    if is_prime(num) == True:
+    if is_prime(num):
         print("prime")
     if int(num) > 100:
         break
-
-
-
-
-
-
-

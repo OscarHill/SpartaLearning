@@ -4,7 +4,7 @@ import pytest
 
 file_name = 'student_test_scores_extended.csv' #Declaring file name - this can be changed!
 
-# This function opens the file and returns "csv_reader",
+# This function opens the file and returns a DictReader object
 def open_file(file_name):
     try:
         with open(file_name, newline='') as file:
